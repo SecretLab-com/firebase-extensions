@@ -32,8 +32,7 @@ const {response} = await post({
 
 ## Code Samples
 
-You can find code samples of frontend applications that use this extension [here](https://github.com/google/generative-ai-docs/tree/main/demos/palm/web/quick-prompt
-) and [here](https://github.com/google/generative-ai-docs/tree/main/demos/palm/web/list-it).
+You can find code samples of frontend applications that use this extension [here](https://github.com/googlecreativelab/quickprompt) and [here](https://github.com/googlecreativelab/listit).
 
 ## Monitoring
 

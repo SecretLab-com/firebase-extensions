@@ -2,7 +2,7 @@
 # https://firebase.google.com/docs/extensions/alpha/ref-extension-yaml
 
 name: firestore-palm-chatbot # Identifier for your extension
-version: 0.1.5 # Follow semver versioning
+version: 0.1.4 # Follow semver versioning
 specVersion: v1beta # Version of the Firebase Extensions specification
 
 # Friendly display name for your extension (~3-5 words)
@@ -84,8 +84,6 @@ params:
       Path to a Cloud Firestore collection which will represent a discussion
       with a LLM on the PaLM API.
     type: string
-    validationRegex: "^[^/]+(/[^/]+/[^/]+)*$"
-    validationErrorMessage: Must be a valid Cloud Firestore Collection
     example: users/{uid}/discussions/{discussionId}/messages
     required: true
     immutable: false

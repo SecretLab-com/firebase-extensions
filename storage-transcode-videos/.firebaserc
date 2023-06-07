@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "fuzzy-day"
+  },
+  "targets": {},
+  "etags": {
+    "fuzzy-day": {
+      "extensionInstances": {
+        "storage-transcode-videos": "a649937dbf749c9bc378662e4c8204c9b6e36d854da05a8ef59e671fb8a97969",
+        "storage-resize-images-gifs": "ac3ceed540af63f15edb3e1c6fd0fecd2a6ae171a6fdb85d00d2b630605a4171",
+        "storage-resize-images": "cf7930fbf3f2a26885fe5f1bc2b164d234b95ea40a5f356944cff1cc0956f641",
+        "firestore-palm-gen-text": "dc3d318596f43a771df3bbd06c8a3ce7c04b1df7e7b461a377d5484101a64ef0"
+      }
+    }
+  }
+}

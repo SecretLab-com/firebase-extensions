@@ -1,7 +1,3 @@
-## Version 0.1.6
-
-Removed unnecessary Storage bucket requirement from PREINSTALL.
-
 ## Version 0.1.5
 
 - Improve error handling.
