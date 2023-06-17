@@ -1,5 +1,12 @@
 {
   "config": {
+    "editList": [
+      {
+        "key": "atom0",
+        "startTimeOffset": "0s",
+        "endTimeOffset": "30s"
+      }
+    ], 
     "elementaryStreams": [
       {
         "key": "video-stream0",
