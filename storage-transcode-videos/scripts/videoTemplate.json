@@ -1,0 +1,40 @@
+{
+  "config": {
+    "elementaryStreams": [
+      {
+        "key": "video-stream0",
+        "videoStream": {
+          "h265": {
+            "widthPixels": 2778,
+            "heightPixels": 2778,
+            "bitrateBps": 5500000,
+            "frameRate": 30,
+            "gopDuration": "4.0s",
+            "rateControlMode": "crf",
+            "crfLevel": 10,
+            "profile": "main",
+            "preset": "medium"
+          }
+        }
+      },
+      {
+        "key": "audio-stream0",
+        "audioStream": {
+          "codec": "aac",
+          "bitrateBps": 64000
+        }
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "1",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0",
+          "audio-stream0"
+        ]
+      }
+    ]
+  }
+}
+
