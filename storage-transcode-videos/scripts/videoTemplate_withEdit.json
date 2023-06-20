@@ -1,16 +1,31 @@
 {
   "config": {
+    "inputs": [
+      {
+        "key": "input0"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s",
+        "endTimeOffset": "30s"
+      }
+    ],
     "elementaryStreams": [
       {
         "key": "video-stream0",
         "videoStream": {
           "h265": {
             "widthPixels": 640,
-            "bitrateBps": 2250000,
+            "bitrateBps": 5500000,
             "frameRate": 30,
             "gopDuration": "4.0s",
             "rateControlMode": "crf",
-            "crfLevel": 18,
+            "crfLevel": 10,
             "profile": "main",
             "preset": "medium"
           }
@@ -20,7 +35,7 @@
         "key": "audio-stream0",
         "audioStream": {
           "codec": "aac",
-          "bitrateBps": 39690,
+          "bitrateBps": 48000,
           "channelCount": 1,
           "channelLayout": ["fc"]
         }

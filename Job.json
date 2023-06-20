@@ -1,0 +1,377 @@
+{
+  "job": {
+    "config": {
+      "editList": [
+        {
+          "endTimeOffset": "85.610s",
+          "inputs": [
+            "input0"
+          ],
+          "key": "atom0",
+          "startTimeOffset": "0s"
+        }
+      ],
+      "elementaryStreams": [
+        {
+          "key": "video-stream0",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 130000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 15.0,
+              "gopDuration": "4s",
+              "heightPixels": 302,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 117000,
+              "vbvSizeBits": 130000,
+              "widthPixels": 170
+            }
+          }
+        },
+        {
+          "key": "video-stream1",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 240000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 454,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 216000,
+              "vbvSizeBits": 240000,
+              "widthPixels": 256
+            }
+          }
+        },
+        {
+          "key": "video-stream2",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 300000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 738,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 270000,
+              "vbvSizeBits": 300000,
+              "widthPixels": 416
+            }
+          }
+        },
+        {
+          "key": "video-stream3",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 400000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 1136,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 360000,
+              "vbvSizeBits": 400000,
+              "widthPixels": 640
+            }
+          }
+        },
+        {
+          "key": "video-stream4",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 1100000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 1364,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 990000,
+              "vbvSizeBits": 1100000,
+              "widthPixels": 768
+            }
+          }
+        },
+        {
+          "key": "video-stream5",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 2200000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 1706,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 1980000,
+              "vbvSizeBits": 2200000,
+              "widthPixels": 960
+            }
+          }
+        },
+        {
+          "key": "video-stream6",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 3,
+              "bitrateBps": 3300000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 30.0,
+              "gopDuration": "4s",
+              "heightPixels": 2274,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 2970000,
+              "vbvSizeBits": 3300000,
+              "widthPixels": 1280
+            }
+          }
+        },
+        {
+          "key": "video-stream7",
+          "videoStream": {
+            "h264": {
+              "bFrameCount": 6,
+              "bitrateBps": 5500000,
+              "crfLevel": 10,
+              "entropyCoder": "cabac",
+              "frameRate": 60.0,
+              "gopDuration": "4s",
+              "heightPixels": 2274,
+              "pixelFormat": "yuv420p",
+              "preset": "medium",
+              "profile": "high",
+              "rateControlMode": "crf",
+              "vbvFullnessBits": 4950000,
+              "vbvSizeBits": 5500000,
+              "widthPixels": 1280
+            }
+          }
+        },
+        {
+          "audioStream": {
+            "bitrateBps": 32000,
+            "channelCount": 2,
+            "channelLayout": [
+              "fl",
+              "fr"
+            ],
+            "codec": "aac",
+            "mapping": [
+              {
+                "atomKey": "atom0",
+                "inputKey": "input0",
+                "inputTrack": 1
+              },
+              {
+                "atomKey": "atom0",
+                "inputChannel": 1,
+                "inputKey": "input0",
+                "inputTrack": 1,
+                "outputChannel": 1
+              }
+            ],
+            "sampleRateHertz": 48000
+          },
+          "key": "audio-stream0"
+        },
+        {
+          "audioStream": {
+            "bitrateBps": 64000,
+            "channelCount": 2,
+            "channelLayout": [
+              "fl",
+              "fr"
+            ],
+            "codec": "aac",
+            "mapping": [
+              {
+                "atomKey": "atom0",
+                "inputKey": "input0",
+                "inputTrack": 1
+              },
+              {
+                "atomKey": "atom0",
+                "inputChannel": 1,
+                "inputKey": "input0",
+                "inputTrack": 1,
+                "outputChannel": 1
+              }
+            ],
+            "sampleRateHertz": 48000
+          },
+          "key": "audio-stream1"
+        }
+      ],
+      "inputs": [
+        {
+          "key": "input0",
+          "uri": "gs://fuzzy-day.appspot.com/videos/FBDownloader.App - 1141125839975462(720p).mp4"
+        }
+      ],
+      "manifests": [
+        {
+          "fileName": "manifest.m3u8",
+          "muxStreams": [
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ],
+          "type": "HLS"
+        }
+      ],
+      "muxStreams": [
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream0",
+            "audio-stream0"
+          ],
+          "fileName": "1.ts",
+          "key": "1",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream1",
+            "audio-stream0"
+          ],
+          "fileName": "2.ts",
+          "key": "2",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream2",
+            "audio-stream1"
+          ],
+          "fileName": "3.ts",
+          "key": "3",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream3",
+            "audio-stream1"
+          ],
+          "fileName": "4.ts",
+          "key": "4",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream4",
+            "audio-stream1"
+          ],
+          "fileName": "5.ts",
+          "key": "5",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream5",
+            "audio-stream1"
+          ],
+          "fileName": "6.ts",
+          "key": "6",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream6",
+            "audio-stream1"
+          ],
+          "fileName": "7.ts",
+          "key": "7",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        },
+        {
+          "container": "ts",
+          "elementaryStreams": [
+            "video-stream7",
+            "audio-stream1"
+          ],
+          "fileName": "8.ts",
+          "key": "8",
+          "segmentSettings": {
+            "individualSegments": true,
+            "segmentDuration": "4s"
+          }
+        }
+      ],
+      "output": {
+        "uri": "gs://fuzzy-day.appspot.com/video_transcoding_output/FBDownloader.App - 1141125839975462(720p)/"
+      }
+    },
+    "createTime": "2023-06-06T21:46:35.561432008Z",
+    "endTime": "2023-06-06T21:50:18.343Z",
+    "name": "projects/614291199950/locations/us-central1/jobs/ffa56e53-a137-4ba8-8f6b-24087e46799e",
+    "startTime": "2023-06-06T21:46:42.012Z",
+    "state": "SUCCEEDED",
+    "ttlAfterCompletionDays": 30
+  }
+}

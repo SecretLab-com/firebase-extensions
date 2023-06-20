@@ -22,5 +22,8 @@
     "fix": "gts fix",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^3.7.1"
   }
 }

@@ -2,7 +2,7 @@ name: storage-transcode-videos
 version: 0.0.1
 specVersion: v1beta
 
-displayName: Transcode Videos on Google Cloud Storage
+displayName: SecretLab Transcode Videos
 description:
   Transcode video files into formats suitable for consumer distribution.
 
@@ -32,7 +32,18 @@ resources:
       eventTrigger:
         eventType: google.storage.object.finalize
         resource: projects/_/buckets/${param:INPUT_VIDEOS_BUCKET}
-      runtime: 'nodejs10'
+      runtime: 'nodejs16'
+  - name: listenForPubSubMessage
+    type: firebaseextensions.v1beta.function
+    description:
+      Listens for completed transcoding jobs and updates the database with the
+      results.
+    properties:
+      availableMemoryMb: 128
+      eventTrigger:
+        eventType: google.pubsub.topic.publish
+        resource: projects/${PROJECT_ID}/topics/fuzzy_explore_video_status
+      runtime: 'nodejs16'
 
 params:
   - param: LOCATION
@@ -121,3 +132,7 @@ roles:
     reason: Allows the extension to create video transcoding jobs.
   - role: storage.admin
     reason: Allows the extension to write to your Cloud Storage.
+  - role: pubsub.editor
+    reason: Allows the extension to read and write to pubsub
+  - role: datastore.user
+    reason: Allows the extension to read and write to datastore and firebase
