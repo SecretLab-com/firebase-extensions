@@ -43,6 +43,10 @@ export const queued = (objectName: string, outputUri: string): void => {
   );
 };
 
+export const pubMessage = (message: string): void => {
+  logger.log(`data: [${message}].`);
+};
+
 export function transcodeVideo(
   objectName: string,
   jobRequest: ICreateJobRequest

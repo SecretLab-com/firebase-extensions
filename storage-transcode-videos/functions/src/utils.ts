@@ -83,3 +83,11 @@ export function shouldProcessStorageObject(objectName?: string): boolean {
   logs.skipExtension(objectName);
   return false;
 }
+
+export const hashName = (myName: string) => {
+  const prefix = `gs://${config.inputVideosBucket}${config.inputVideosPath}`;
+  if (myName.startsWith(prefix)) {
+    return myName.slice(prefix.length).replace(/\//g, '-');
+  }
+  return myName;
+};

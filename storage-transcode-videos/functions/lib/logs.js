@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.jobFailed = exports.templateDoesNotExist = exports.transcodeVideo = exports.queued = exports.skipExtension = exports.skipPath = exports.init = void 0;
+exports.jobFailed = exports.templateDoesNotExist = exports.transcodeVideo = exports.pubMessage = exports.queued = exports.skipExtension = exports.skipPath = exports.init = void 0;
 const firebase_functions_1 = require("firebase-functions");
 const config_1 = require("./config");
 const init = () => {
@@ -34,6 +34,10 @@ const queued = (objectName, outputUri) => {
     firebase_functions_1.logger.log(`Video '${objectName}' has been successfully queued for transcoding. Output will appear at '${outputUri}'.`);
 };
 exports.queued = queued;
+const pubMessage = (message) => {
+    firebase_functions_1.logger.log(`data: [${message}].`);
+};
+exports.pubMessage = pubMessage;
 function transcodeVideo(objectName, jobRequest) {
     firebase_functions_1.logger.log(`Creating a transcode video request for '${objectName}' with configuration`, jobRequest);
 }

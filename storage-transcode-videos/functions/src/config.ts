@@ -17,6 +17,7 @@
 export default {
   defaultTemplateId: process.env.DEFAULT_TEMPLATE_ID!,
   inputVideosPath: process.env.INPUT_VIDEOS_PATH!,
+  inputVideosBucket: process.env.INPUT_VIDEOS_BUCKET!,
   location: process.env.LOCATION!,
   outputUri: process.env.OUTPUT_STORAGE_URI,
   outputVideosBucket: process.env.OUTPUT_VIDEOS_BUCKET!,

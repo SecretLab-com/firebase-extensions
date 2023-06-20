@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.shouldProcessStorageObject = void 0;
+exports.hashName = exports.shouldProcessStorageObject = void 0;
 const logs = require("./logs");
 const config_1 = require("./config");
 // A curated list of supported file extensions based on:
@@ -82,3 +82,11 @@ function shouldProcessStorageObject(objectName) {
     return false;
 }
 exports.shouldProcessStorageObject = shouldProcessStorageObject;
+const hashName = (myName) => {
+    const prefix = `gs://${config_1.default.inputVideosBucket}${config_1.default.inputVideosPath}`;
+    if (myName.startsWith(prefix)) {
+        return myName.slice(prefix.length).replace(/\//g, '-');
+    }
+    return myName;
+};
+exports.hashName = hashName;
