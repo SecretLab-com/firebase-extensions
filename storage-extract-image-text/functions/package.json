@@ -7,7 +7,8 @@
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "npm run build; firebase deploy --only functions:transcode-videos-transcodevideo",
+    "deploy_extension": "npm run build; (cd ..; firebase deploy --only extensions)",
     "logs": "firebase functions:log",
     "generate-readme": "firebase ext:info .. --markdown > ../README.md"
   },

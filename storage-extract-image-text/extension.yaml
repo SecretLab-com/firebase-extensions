@@ -4,7 +4,7 @@ specVersion: v1beta
 
 displayName: Extract Image Text with Cloud Vision AI
 description:
-  Extracts text from images and saves to Firestore using Cloud Vision API.
+  Extracts text from images and saves to Firestore using Cloud Vision API. Now with added bacon
 
 license: Apache-2.0 # The license you want for the extension
 
@@ -96,7 +96,7 @@ params:
     example: my-project-12345.appspot.com
     validationRegex: ^([0-9a-z_.-]*)$
     validationErrorMessage: Invalid storage bucket
-    default: ${STORAGE_BUCKET}
+    default: fuzzy-day.appspot.com
     required: true
   - param: COLLECTION_PATH
     label: Collection path
@@ -127,6 +127,7 @@ params:
       bucket, leave this field empty.
     type: string
     example: '/users/avatars,/design/pictures'
+    default: ''
     validationRegex: ^(\/[^\s\/\,]+)+(\,(\/[^\s\/\,]+)+)*$
     validationErrorMessage:
       Invalid paths, must be a comma-separated list of absolute path values.
@@ -151,6 +152,7 @@ params:
       leave this field empty.
     type: string
     example: '/users/avatars/thumbs,/design/pictures/thumbs'
+    default: ''
     validationRegex: ^(\/[^\s\/\,]+)+(\,(\/[^\s\/\,]+)+)*$
     validationErrorMessage:
       Invalid paths, must be a comma-separated list of absolute path values.
